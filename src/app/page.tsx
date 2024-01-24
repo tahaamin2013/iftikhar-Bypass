@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -21,65 +21,66 @@ export default function Home() {
   }
   return (
     <div className="text-black">
-    <main>
-      <div className="min-h-screen flex flex-col justify-center items-center">
-        <h1 className="text-4xl font-semibold text-center">
-        iftikhar Bypass
-        </h1>
+      <main>
+        <div className="min-h-screen flex flex-col justify-center items-center">
+          <h1 className="text-4xl font-semibold text-center">
+            Iftikhar Bypass
+          </h1>
 
-        <form
-          onSubmit={handleSubmit}
-          className="mt-2 min-w-[27vw] items-center"
-        >
-          {/* Input box */}
-          <div className="flex flex-col">
-            <label className="relative block mt-2">
-              <input
-                id="url"
-                type="text"
-                aria-label="Linkvertise URL"
-                placeholder="https://linkvertise.com/..."
-                className="w-full text-xs py-3 pr-4 pl-8 rounded-lg bg-white/5 flex flex-row justify-between items-center outline-none focus:ring-2 transition-all duration-200"
-              />
-              <span className="absolute inset-y-0 left-0 flex items-center pl-3 opacity-50">
-                <URLIcon />
-              </span>
-            </label>
-          </div>
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.95 }}
-            className="w-full mt-3 bg-[#434581] text-[#fff] text-xs text-opacity-80 rounded-lg px-6 py-3 uppercase font-semibold tracking-wider"
+          <form
+            onSubmit={handleSubmit}
+            className="mt-2 min-w-[27vw] items-center"
           >
-            Bypass
-          </motion.button>
-          <p className="mt-1 text-sm opacity-50 text-center">
-            Made by{"  "}
-            <span className="text-[#6b6ecc]">
-              <strong>Taha amin</strong>
-            </span>
-          </p>
-        </form>
-
-        {/* Container for bypassed link */}
-        <div className="mt-10">
-          {bypassed ? (
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={bypassed}
-              className="max-w-[5rem] hover:bg-white/10 transition-all duration-200 w-full bg-white/5 text-[#fff] text-xs text-opacity-80 rounded-lg px-6 py-3"
+            {/* Input box */}
+            <div className="flex flex-col">
+              <label className="relative block mt-2">
+                <input
+                  id="url"
+                  type="text"
+                  aria-label="Linkvertise URL"
+                  placeholder="https://linkvertise.com/..."
+                  className="border border-black text-xs py-3 w-[500px] pr-4 pl-2 rounded-lg bg-white/5 flex flex-row justify-between items-center outline-none focus:ring-2 transition-all duration-200"
+                />
+                <span className="absolute inset-y-0 left-0 flex items-center pl-3 opacity-50">
+                  <URLIcon />
+                </span>
+              </label>
+            </div>
+            <div className="w-full flex flex-row justify-end">
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.95 }}
+              className="w-fit mt-3 bg-black text-[#fff] text-xs text-opacity-80 rounded-lg px-6 py-3 uppercase font-semibold tracking-wider"
             >
-              {truncate(bypassed)}
-            </a>
-          ) : null}
-        </div>
-      </div>
-    </main>
-  </div>
-);
-}
+              Bypass ad-link
+            </motion.button>
+            </div>
+           <div className="w-full flex justify-end mt-2">
+           <h1 className="text-sm font-semibold text-center">
+            Made by 
+                <strong className="text-[#2962ff]"> Taha amin</strong>
+          </h1>
+           </div>
+          </form>
 
+          {/* Container for bypassed link */}
+          <div className="mt-10">
+            {bypassed ? (
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={bypassed}
+                className="max-w-[5rem] hover:bg-white/10 transition-all duration-200 w-full bg-white/5 text-[#fff] text-xs text-opacity-80 rounded-lg px-6 py-3"
+              >
+                {truncate(bypassed)}
+              </a>
+            ) : null}
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+}
 
 const URLIcon = () => (
   <svg
@@ -107,4 +108,3 @@ const URLIcon = () => (
     />
   </svg>
 );
-
