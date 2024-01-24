@@ -70,7 +70,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 href={bypassed}
-                className="max-w-[5rem] hover:bg-white/10 transition-all duration-200 w-full bg-white/5 text-[#fff] text-xs text-opacity-80 rounded-lg px-6 py-3"
+                className="max-w-[5rem]ransition-all duration-200 w-full text-black text-xs rounded-lg px-6 py-3"
               >
                 {truncate(bypassed)}
               </a>
