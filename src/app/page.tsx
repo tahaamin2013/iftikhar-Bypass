@@ -56,7 +56,7 @@ export default function Home() {
             </motion.button>
             </div>
            <div className="w-full flex justify-end mt-2">
-           <h1 className="text-sm font-semibold text-center">
+           <h1 className="text-sm font-semibold text-center mr-1">
             Made by 
                 <strong className="text-[#2962ff]"> Taha amin</strong>
           </h1>
