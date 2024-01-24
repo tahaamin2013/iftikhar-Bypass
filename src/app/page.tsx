@@ -23,7 +23,7 @@ export default function Home() {
     <div className="text-black">
       <main>
         <div className="min-h-screen flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-semibold text-center">
+          <h1 className="text-4xl font-extrabold text-center">
             Iftikhar Bypass
           </h1>
 
@@ -50,7 +50,7 @@ export default function Home() {
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.95 }}
-              className="w-fit mt-3 bg-black text-[#fff] text-xs text-opacity-80 rounded-lg px-6 py-3 uppercase font-semibold tracking-wider"
+              className="w-fit mt-3 bg-black text-white text-xs rounded-lg px-6 py-3 uppercase font-semibold tracking-wider"
             >
               Bypass ad-link
             </motion.button>
