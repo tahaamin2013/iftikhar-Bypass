@@ -39,7 +39,7 @@ export default function Home() {
                   type="text"
                   aria-label="Linkvertise URL"
                   placeholder="https://linkvertise.com/..."
-                  className="border border-black text-xs py-3 w-[500px] pr-4 pl-2 rounded-lg bg-white/5 flex flex-row justify-between items-center outline-none focus:ring-2 transition-all duration-200"
+                  className="border border-black text-xs py-3 w-[300px] sm:w-[500px] pr-4 pl-2 rounded-lg bg-white/5 flex flex-row justify-between items-center outline-none focus:ring-2 transition-all duration-200"
                 />
                 <span className="absolute inset-y-0 left-0 flex items-center pl-3 opacity-50">
                   <URLIcon />
