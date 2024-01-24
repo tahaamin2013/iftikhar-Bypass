@@ -20,7 +20,7 @@ export default function Home() {
       });
   }
   return (
-    <div className="bg-[#0a0c10] text-white">
+    <div className="text-black">
     <main>
       <div className="min-h-screen flex flex-col justify-center items-center">
         <h1 className="text-4xl font-semibold text-center">
