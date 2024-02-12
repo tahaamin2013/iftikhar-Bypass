@@ -24,7 +24,7 @@ export default function Home() {
       <main>
         <div className="min-h-screen flex flex-col justify-center items-center">
           <h1 className="text-4xl font-extrabold text-center">
-            Iftikhar Bypass
+          Linkvertise Bypass
           </h1>
 
           <form
@@ -58,7 +58,7 @@ export default function Home() {
            <div className="w-full flex justify-end mt-2">
            <h1 className="text-sm font-semibold text-center mr-1">
             Made by 
-                <strong className="text-[#2962ff]"> Taha amin</strong>
+                <strong className="text-[#2962ff]">Taha amin</strong>
           </h1>
            </div>
           </form>
